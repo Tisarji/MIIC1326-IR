@@ -3,7 +3,6 @@ SELECT FName, LName
   FROM employee
  WHERE UPPER(FName) LIKE UPPER(:first_name) || '%'
    AND UPPER(LName) LIKE UPPER(:last_name) || '%';
-
 -- 2
 CREATE TABLE fac (
   facid CHAR(6) PRIMARY KEY,
